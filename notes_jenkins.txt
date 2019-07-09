@@ -1,0 +1,78 @@
+/* These note s are a culmination of three books namely :
+. Rafal Leszko - Continuous Delivery with Docker and Jenkins_ Delivering software at scale-Packt Publishing (2017)
+. John Ferguson Smart - Jenkins_ The Definitive Guide_ Continuous integration for the masses-O_Reilly Media (2011)
+. Brent Laster - Jenkins 2_ Up and Running Evolve Your Deployment Pipeline for Next Generation Automation-O’Reilly Media
+
+I will redefine things that are already defined just because i liked the alternate definitions given in different books. 
+This may or may not be a complete guide, that depends on my interest in the sub-topics. And, I wiil not state what section came from which book.
+ Du ferne träume gesellschaft bester in, glück nicht mit ja schon du sonder so im, blieb so der ist der. (just dummy text)
+ */
+
+Continuous Integration Fundamentals
+
+Back in the days of waterfall projects and Gantt charts, before the introduction of CI
+practices, development team time and energy was regularly drained in the period lead-
+ing up to a release by what was known as the Integration Phase. During this phase, the
+code changes made by individual developers or small teams were brought together
+piecemeal and forged into a working product. This was hard work, sometimes involving
+the integration of months of conflicting changes. It was very hard to anticipate the types
+of issues that would crop up, and even harder to fix them, as it could involve reworking
+code that had been written weeks or months before. This painful process, fraught with
+risk and danger, often lead to significant delivery delays, unplanned costs and, as a
+result, unhappy clients. Continuous Integration was born to address these issues.
+Continuous Integration, in its simplest form, involves a tool that monitors your version
+control system for changes. Whenever a change is detected, this tool automatically
+compiles and tests your application. If something goes wrong, the tool immediately
+notifies the developers so that they can fix the issue immediately.
+
+First and foremost, it is designed to help identify and fix integration and regression
+issues faster, resulting in smoother, quicker delivery, and fewer bugs. By providing
+better visibility for both technical and non-technical team members on the state of the
+project, Continuous Integration can open and facilitate communication channels be-
+tween team members and encourage collaborative problem solving and process im-
+provement. And, by automating the deployment process, Continuous Integration helps
+you get your software into the hands of the testers and the end users faster, more reli-
+ably, and with less effort.
+
+Continuous Integration can also help you keep tabs on the health of your code base, 
+automatically monitoring code quality and code coverage metrics, and helping keep 
+technical debt down and main-tenance costs low. The publicly-visible code quality metrics 
+can also encourage developers to take pride in the quality of their code and strive to improve it. 
+Combined with automated end-to-end acceptance tests, CI can also act as a communication tool, 
+publishing a clear picture of the current state of development efforts. And it can simplify
+and accelerate delivery by helping you automate the deployment process, letting you
+deploy the latest version of your application either automatically or as a one-click
+process.
+
+The practice of automatically deploying every successful build directly into production is generally 
+known as Continuous Deployment.
+However, a pure Continuous Deployment approach is not always appropriate for everyone. For example, 
+many users would not appreciate new versions falling into their laps several times a week, and prefer 
+a more predictable (and transparent) release cycle.
+Commercial and marketing considerations might also play a role in when a new release
+should actually be deployed.
+The notion of Continuous Delivery is a slight variation on the idea of Continuous Deployment that takes into 
+account these considerations. With Continuous Delivery, any and every successful build that has passed 
+all the relevant automated tests and quality gates can potentially be deployed into production via a fully automated one-click
+process, and be in the hands of the end-user within minutes. However, the process is
+not automatic: it is the business, rather than IT, that decides the best time to deliver
+the latest changes.
+
+Introducing Jenkins (née Hudson)
+
+Jenkins, originally called Hudson, is an open source Continuous Integration tool written in Java.
+why use Jenkins for your CI infrastructure?
+Firstly, Jenkins is easy to use. The user interface is simple, intuitive, and visually ap-
+pealing, and Jenkins as a whole has a very low learning curve.
+However Jenkins does not sacrifice power or extensibility: it is also extremely flexible
+and easy to adapt to your own purposes. Hundreds of open source plugins are available,
+with more coming out every week. These plugins cover everything from version control
+systems, build tools, code quality metrics, build notifiers, integration with external
+systems, UI customization, games, and much more. And installing them is quick and
+easy.
+Last, but certainly not least, much of Jenkins’s popularity comes from the size and
+vibrancy of its community. The Jenkins community is a large, dynamic, reactive
+and welcoming bunch, with passionate champions, active mailing lists, IRC channels
+and a very vocal blog and twitter account. The development pace is fast, with releases
+coming out weekly with the latest new features, bug fixes, and plugin updates.
+
